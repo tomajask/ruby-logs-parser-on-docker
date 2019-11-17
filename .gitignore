@@ -1,1 +1,4 @@
 source/spec/examples.txt
+tmp/
+
+!source/data/*.log
