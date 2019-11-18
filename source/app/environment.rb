@@ -8,3 +8,4 @@ $LOAD_PATH << app_path
 require "pry"
 
 require "file_reader"
+require "storage/in_memory"

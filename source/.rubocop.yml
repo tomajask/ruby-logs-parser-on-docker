@@ -8,6 +8,9 @@ Metrics/BlockLength:
   Exclude:
     - spec/**/*
 
+Metrics/AbcSize:
+  Max: 15.75
+
 Style/StringLiterals:
   EnforcedStyle: double_quotes
 
