@@ -24,7 +24,6 @@ dev: build
 
 test: build
 	docker container run \
-		-it \
 		-v $(PWD)/source:/app \
 		--rm \
 		$(project_name) \
