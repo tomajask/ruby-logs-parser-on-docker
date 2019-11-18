@@ -6,3 +6,5 @@ $LOAD_PATH << app_path
 
 # Require dependencies
 require "pry"
+
+require "file_reader"
