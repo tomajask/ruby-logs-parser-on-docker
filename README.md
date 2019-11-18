@@ -37,6 +37,7 @@ Or simply run this script inside the container:
 ```bash
 bin/parser.rb data/webserver.log
 ```
+By default it sorts logs by visits. It can also sort logs by unique views. Just use `-o unique_views` option.
 
 Or use `make` command:
 ```bash
