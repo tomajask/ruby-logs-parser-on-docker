@@ -20,3 +20,6 @@ Style/Documentation:
 Style/ParallelAssignment:
   Enabled: false
 
+Style/RegexpLiteral:
+  EnforcedStyle: percent_r
+
