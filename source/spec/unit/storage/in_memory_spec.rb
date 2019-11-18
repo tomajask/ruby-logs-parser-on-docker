@@ -41,10 +41,10 @@ RSpec.describe Storage::InMemory do
 
     it "returns all stored objects" do
       is_expected.to eq([
-        ["/help_page/1", { counter: 3, visitors: { "722.247.931.582" => 3 } }],
-        ["/index", { counter: 2, visitors: { "126.318.035.038" => 1, "929.398.951.889" => 1 } }],
-        ["/help_page/2", { counter: 1, visitors: { "646.865.545.408" => 1 } }]
-      ])
+                          ["/help_page/1", { counter: 3, visitors: { "722.247.931.582" => 3 } }],
+                          ["/index", { counter: 2, visitors: { "126.318.035.038" => 1, "929.398.951.889" => 1 } }],
+                          ["/help_page/2", { counter: 1, visitors: { "646.865.545.408" => 1 } }]
+                        ])
     end
   end
 
@@ -61,10 +61,10 @@ RSpec.describe Storage::InMemory do
 
     it "returns all stored objects" do
       is_expected.to eq([
-        ["/index", { counter: 2, visitors: { "126.318.035.038" => 1, "929.398.951.889" => 1 } }],
-        ["/help_page/2", { counter: 1, visitors: { "646.865.545.408" => 1 } }],
-        ["/help_page/1", { counter: 2, visitors: { "722.247.931.582" => 2 } }]
-      ])
+                          ["/index", { counter: 2, visitors: { "126.318.035.038" => 1, "929.398.951.889" => 1 } }],
+                          ["/help_page/2", { counter: 1, visitors: { "646.865.545.408" => 1 } }],
+                          ["/help_page/1", { counter: 2, visitors: { "722.247.931.582" => 2 } }]
+                        ])
     end
   end
 end
