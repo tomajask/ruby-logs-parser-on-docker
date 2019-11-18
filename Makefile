@@ -28,3 +28,10 @@ test: build
 		--rm \
 		$(project_name) \
 		/bin/sh -c 'rubocop -P && rspec'
+
+run: build
+	docker container run \
+		-v $(PWD)/source:/app \
+		--rm \
+		$(project_name) \
+		/bin/sh -c 'bin/parser.rb data/webserver.log'
