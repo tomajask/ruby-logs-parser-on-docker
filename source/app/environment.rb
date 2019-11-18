@@ -7,6 +7,9 @@ $LOAD_PATH << app_path
 # Require dependencies
 require "pry"
 
+require "formatters/unique_visits"
+require "formatters/visits"
+require "formatters/base"
 require "file_reader"
 require "log_parser"
 require "storage/in_memory"
