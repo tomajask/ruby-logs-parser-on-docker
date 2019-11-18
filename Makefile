@@ -21,3 +21,11 @@ dev: build
 		--rm \
 		$(project_name) \
 		/bin/sh
+
+test: build
+	docker container run \
+		-it \
+		-v $(PWD)/source:/app \
+		--rm \
+		$(project_name) \
+		rspec && rubocop -P
