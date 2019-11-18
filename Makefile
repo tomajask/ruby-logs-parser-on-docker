@@ -27,4 +27,4 @@ test: build
 		-v $(PWD)/source:/app \
 		--rm \
 		$(project_name) \
-		rspec && rubocop -P
+		/bin/sh -c 'rubocop -P && rspec'
