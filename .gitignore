@@ -1,4 +1,5 @@
 source/spec/examples.txt
+source/coverage
 tmp/
 
 !source/data/*.log
